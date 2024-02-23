@@ -1,3 +1,4 @@
 payload:
   - DOMAIN-SUFFIX,hostloc.com
   - DOMAIN-SUFFIX,kuromis.com
+  - DOMAIN-SUFFIX,raw.githubusercontent.com
