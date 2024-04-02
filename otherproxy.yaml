@@ -7,3 +7,4 @@ payload:
   - DOMAIN-SUFFIX,claude.ai
   - DOMAIN,servd-anthropic-website.b-cdn.net
   - DOMAIN-SUFFIX,dify.ai
+  - DOMAIN-SUFFIX,suno.ai
