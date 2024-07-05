@@ -16,3 +16,4 @@ payload:
   - DOMAIN-SUFFIX,capcut.com
   - DOMAIN-SUFFIX,intercom.io
   - DOMAIN-SUFFIX,imgix.net
+  - DOMAIN-SUFFIX,ovhcloud.com
