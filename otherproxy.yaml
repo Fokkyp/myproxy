@@ -17,3 +17,4 @@ payload:
   - DOMAIN-SUFFIX,intercom.io
   - DOMAIN-SUFFIX,imgix.net
   - DOMAIN-SUFFIX,ovhcloud.com
+  - DOMAIN-SUFFIX,ovh.com
