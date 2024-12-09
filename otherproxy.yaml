@@ -1,7 +1,6 @@
 payload:
   - DOMAIN-SUFFIX,hostloc.com
   - DOMAIN-SUFFIX,kuromis.com
-  - DOMAIN-SUFFIX,raw.githubusercontent.com
   - DOMAIN,cdn.usefathom.com
   - DOMAIN-SUFFIX,anthropic.com
   - DOMAIN-SUFFIX,claude.ai
