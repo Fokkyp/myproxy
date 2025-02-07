@@ -26,3 +26,4 @@ payload:
   - DOMAIN-SUFFIX,wsj.com
   - DOMAIN-SUFFIX,termius.com
   - DOMAIN-SUFFIX,canva.com
+  - DOMAIN-SUFFIX,greasyfork.org
