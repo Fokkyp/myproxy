@@ -18,7 +18,7 @@ allow-lan: false
 # #192.168.122.11: 绑定单个IPv4地址
 # #"[aaaa::a8aa:ff:fe09:57d8]": 绑定单个IPv6地址
 bind-address: "*"
-ipv6: false
+ipv6: true
 
 # 规则模式：rule（规则） / global（全局代理）/ direct（全局直连）/ script (脚本)
 mode: rule
@@ -60,7 +60,7 @@ experimental:
 
 dns:
   enable: true # 是否启用dns false
-  ipv6: false
+  ipv6: true
   listen: 0.0.0.0:53
   enhanced-mode: fake-ip # 模式：redir-host或fake-ip
   fake-ip-range: 198.18.0.1/16 #
@@ -82,8 +82,8 @@ dns:
     - 2400:3200::1
     - 2001:4860:4860::8888
   direct-nameserver:
-    - https://223.5.5.5/dns-query
-    - https://223.6.6.6/dns-query
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
   direct-nameserver-follow-policy: true
   nameserver:
     - https://knc03zecpb.cloudflare-gateway.com/dns-query
