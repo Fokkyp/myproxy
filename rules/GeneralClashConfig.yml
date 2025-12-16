@@ -82,18 +82,17 @@ dns:
     - 119.29.29.29
     - 223.5.5.5
     - 2400:3200::1
-    - 2001:4860:4860::8888
+    - 2402:4e00::
   nameserver:
     - https://knc03zecpb.cloudflare-gateway.com/dns-query
+    - https://dns.google/dns-query
   proxy-server-nameserver:
-    - https://knc03zecpb.cloudflare-gateway.com/dns-query
-  nameserver-policy:
-    'geosite: cn':
-      - https://doh.pub/dns-query
-      - https://dns.alidns.com/dns-query
-    'geoip: cn':
-      - https://doh.pub/dns-query
-      - https://dns.alidns.com/dns-query 
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  direct-nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  respect-rules: true
   fallback-filter:
     domain:
       - '+.google.com'
