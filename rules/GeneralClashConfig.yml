@@ -83,13 +83,17 @@ dns:
     - 223.5.5.5
     - 2400:3200::1
     - 2001:4860:4860::8888
-  direct-nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
   nameserver:
     - https://knc03zecpb.cloudflare-gateway.com/dns-query
   proxy-server-nameserver:
     - https://knc03zecpb.cloudflare-gateway.com/dns-query
+  nameserver-policy:
+    'geosite: cn':
+      - https://doh.pub/dns-query
+      - https://dns.alidns.com/dns-query
+    'geoip: cn':
+      - https://doh.pub/dns-query
+      - https://dns.alidns.com/dns-query 
   fallback-filter:
     domain:
       - '+.google.com'
