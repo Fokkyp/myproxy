@@ -20,8 +20,9 @@ dns:
     - www.msftconnecttest.com
   fake-ip-filter-mode: blacklist
   default-nameserver:
-    - 223.5.5.5
     - 119.29.29.29
+    - 223.5.5.5
+    - 114.114.114.114
   nameserver:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
