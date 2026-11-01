@@ -1,7 +1,7 @@
 dns:
   enable: true # 是否启用dns false
   prefer-h3: false # DOH 优先使用 http/3
-  ipv6: true # ipv6 解析开关
+  ipv6: false # ipv6 解析开关
   listen: 0.0.0.0:53 # DNS 服务监听，仅支持 udp
   enhanced-mode: fake-ip # 模式：redir-host或fake-ip
   fake-ip-range: 198.18.0.1/16 #
@@ -20,16 +20,15 @@ dns:
     - www.msftconnecttest.com
   fake-ip-filter-mode: blacklist
   default-nameserver:
-    - 119.29.29.29
     - 223.5.5.5
-    - 114.114.114.114
+    - 223.6.6.6
   nameserver:
-    - https://1.1.1.1/dns-query
-    - https://8.8.8.8/dns-query
+    - 8.8.8.8
+    - 1.1.1.1
   proxy-server-nameserver:
-    - https://dns.alidns.com/dns-query
-    - https://doh.pub/dns-query
+    - 223.5.5.5
+    - 223.6.6.6
   direct-nameserver:
-    - https://dns.alidns.com/dns-query
-    - https://doh.pub/dns-query
+    - 223.5.5.5
+    - 223.6.6.6
   respect-rules: true # 配置查询域名使用的 DNS 服务器
